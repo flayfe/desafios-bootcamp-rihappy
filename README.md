@@ -1,2 +1,2 @@
 # desafios-bootcamp-rihappy
-Jogo desenvolvido como parte de um projeto educacional da Digital Innovation One.
+Desafios realizados durante o Bootcamp Ri Happy - Front-end do Zero #2 de 2025
