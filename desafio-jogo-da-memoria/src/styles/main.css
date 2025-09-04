@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(circle,rgba(115, 2, 2, 1) 0%, rgba(242, 135, 5, 1) 41%, rgba(3, 140, 76, 1) 83%);
+  user-select: none;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: linear-gradient(
+    325deg,
+    #04ADBF 0%,
+    #A0F266 30%,
+    #F2AA52 70%,
+    #BF613F 100%
+  );
+  padding: 40px 60px;
+  border-radius: 5%;
+} 
+
+h2 {
+  font-size: 3em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: "Asimovian", sans-serif ;
+}
+
+.reset {
+  padding: 15px 20px;
+  width: 100%;
+  color: #000;
+  background-color: #f5eadd;
+  border: none;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.reset:focus {
+  color: #A0F266;
+  background-color: #183877;
+}
+
+.game {
+  width: 430px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+.item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #027333;
+
+  font-size: 3em;
+  transform: rotateY(180deg);
+  transition: 0.25s;
+  border-radius: 5%;
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #183877;
+  transition: 0.25s;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+  border-radius: 5%;
+}
+
+.item.boxOpen {
+  transform: rotateY(0deg);
+}
+
+.boxOpen::after,
+.boxMatch::after {
+  transform: rotateY(180deg);
+}
