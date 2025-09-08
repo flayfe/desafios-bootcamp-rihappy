@@ -1,0 +1,101 @@
+.back-side {
+    padding: .75rem;
+}
+
+
+.back-side .atributos {
+    margin: 0;
+    padding: .5rem;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.111);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    gap: .25rem;
+}
+
+.back-side .atributos .atributo {
+    color: #fff;
+    padding: 0;
+    font-size: .625rem;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+}
+
+/* incluir o atributos e atributo */
+
+.back-side .detail {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+/* incluir alteracao do tamanho e posicao da imagem no back-side */
+.back-side .detail img {
+    height: 5rem !important;
+    width: auto;
+}
+
+.column-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.column-2 {
+    display: flex;
+    flex-direction: column;
+    gap: .125rem;
+    align-items: center;
+}
+
+.column-1,
+.column-2 {
+    margin: 0;
+    padding: 0;
+}
+
+.atributo-label {
+    color: #F2F2F2;
+    font-weight: 400;
+}
+
+.atributo-valor {
+    color: #2D3C59;
+    font-weight: 600;
+}
+
+.atributo-valor .abilities {
+    list-style: none;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: .25rem;
+}
+
+.atributo-valor .ability {
+    border-radius: 1rem;
+    background-color: #ffffff5c;
+    padding: 0 .28rem;
+    text-align: center;
+    align-content: center;
+}
+
+.types-container {
+    width: 100%;
+}
+
+.back-side .types {
+    display: flex;
+}
+
+.back-side .types .type {
+    margin: 0;
+    font-size: .5rem;
+}
